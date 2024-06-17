@@ -1,0 +1,86 @@
+/* .app {
+	margin: 100px auto;
+	text-align: center;
+	color: #61dafb;
+} */
+.container {
+	text-align: center;
+	max-width: 950px;
+	margin: 8cqmax auto;
+}
+
+h1{
+	color: yellow;
+}
+
+.buttons-container {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+
+}
+
+.button {
+	padding: 0.5em 0.75em;
+	background-color: hsl(var(--accent-color-hue), var(--accent-color-saturation), 77%);
+	font-size: 18px;
+	color: darkblue;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 2px 2px 5px rgb(23, 147, 200);
+	transition: background-color 0.3s ease;
+}
+
+.button:hover {
+	background-color: hsl(var(--accent-color-hue), var(--accent-color-saturation), 57%);
+	color: orangered;
+}
+
+.button:disabled {
+	background-color: var(--disabled-color);
+}
+.steps-content {
+	margin-top: 40px;
+	margin-bottom: 30px;
+	min-height: 100px;
+	border: 2px solid hsl(var(--accent-color-hue), var(--accent-color-saturation), 77%);
+	border-radius: 15px;
+	padding: 15px 20px;
+}
+
+.steps-list {
+	list-style: none;
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+.steps-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 1 0px;
+	font-size: 0.75rem;
+}
+
+.steps-item-button {
+	cursor: pointer;
+	border-radius: 50%;
+	padding: 0.75rem 1rem;
+	background: #eeacac;
+	border: none;
+	margin-bottom: 12px;
+}
+
+.steps-item.active .steps-item-button,
+.steps-item.done .steps-item-button {
+	background: hsl(var(--accent-color-hue), var(--accent-color-saturation), 80%);
+}
+
+.steps-item.active,
+.steps-item.active .steps-item-button {
+	font-weight: bold;
+}
